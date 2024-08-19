@@ -54,9 +54,13 @@
     gcloud compute regions list
     ```
 
-gcloud sql instances create pgvec \
---database-version=POSTGRES_16 \
---region=REGION \
---zone=ZONE \
---tier=TIER \
---edition=ENTERPRISE_PLUS
+8. list tiers:
+
+    ```
+    gcloud sql tiers list
+    ```
+
+<!-- gcloud sql instances create pgvec \
+--database-version=POSTGRES_15 \
+--region=us-east1 \
+--tier=db-f1-micro -->
