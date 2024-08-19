@@ -30,3 +30,33 @@
     ```
     gcloud init
     ```
+
+5. Create the instance:
+
+    ```
+    gcloud sql instances create INSTANCE_NAME \
+    --database-version=POSTGRES_15 \
+    --region=REGION \
+    --zone=ZONE \
+    --tier=TIER \
+    --edition=ENTERPRISE_PLUS
+    ```
+
+6. if intrested in explore zones:
+
+    ```
+    gcloud compute zones list
+    ```
+
+7. if intrested in explore regions:
+
+    ```
+    gcloud compute regions list
+    ```
+
+gcloud sql instances create pgvec \
+--database-version=POSTGRES_16 \
+--region=REGION \
+--zone=ZONE \
+--tier=TIER \
+--edition=ENTERPRISE_PLUS
