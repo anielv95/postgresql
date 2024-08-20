@@ -64,3 +64,27 @@
 --database-version=POSTGRES_15 \
 --region=us-east1 \
 --tier=db-f1-micro -->
+
+9. list instance users:
+
+    ```
+    gcloud sql users list \
+    --instance=INSTANCE_NAME
+    ```
+
+10. set password for default user:
+
+    ```
+    gcloud sql users set-password postgres \
+    --instance=INSTANCE_NAME \
+    --prompt-for-password
+    ```
+
+11. create user:
+    ```
+    gcloud sql users create USER_NAME \
+    --instance=INSTANCE_NAME \
+    --password=PASSWORD
+    ```
+
+12. 
