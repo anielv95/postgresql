@@ -1,7 +1,7 @@
 from google.cloud.sql.connector import Connector
 import sqlalchemy
 from dotenv import load_dotenv, find_dotenv
-
+import numpy as np
 from typing import List, Optional
 from vertexai.language_models import TextEmbeddingInput, TextEmbeddingModel
 import os
@@ -32,7 +32,7 @@ def embed_text(
     embeddings = model.get_embeddings(inputs, **kwargs)
     return [embedding.values for embedding in embeddings]
 
-embedding = embed_text(["text encoded"])[0]
+embedding = np.array(embed_text(["text encoded"])[0])
 
 # initialize Connector object
 connector = Connector()
