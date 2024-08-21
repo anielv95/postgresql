@@ -9,4 +9,6 @@ ipykernel
 tqdm
 python-dotenv
 
-psycopg[binary]
+#cloud-sql-python-connector
+SQLAlchemy==2.0.7
+pgvector
