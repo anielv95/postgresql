@@ -1,9 +1,16 @@
 from google.cloud.sql.connector import Connector
 import sqlalchemy
+from dotenv import load_dotenv, find_dotenv
 
-project_id = "posgresql-433015 "
-region = "us-central1"
-instance_name = "pgvec"
+from typing import List, Optional
+from vertexai.language_models import TextEmbeddingInput, TextEmbeddingModel
+import os
+
+_ = load_dotenv(find_dotenv())
+
+project_id = os.environ["PROJECT_ID"]
+region = os.environ["REGION"]
+instance_name = os.environ["INSTANCE_NAME"]
 
 # initialize parameters
 INSTANCE_CONNECTION_NAME = f"{project_id}:{region}:{instance_name}" # i.e demo-project:us-central1:demo-instance
@@ -12,8 +19,20 @@ DB_USER = "an"
 DB_PASS = "qr4nIeL  "
 DB_NAME = "pgvec-db"
 
+def embed_text(
+    texts: List[str] = ["banana muffins? ", "banana bread? banana muffins?"],
+    task: str = "RETRIEVAL_DOCUMENT",
+    model_name: str = "text-embedding-004",
+    dimensionality: Optional[int] = 256,
+) -> List[List[float]]:
+    """Embeds texts with a pre-trained, foundational model."""
+    model = TextEmbeddingModel.from_pretrained(model_name)
+    inputs = [TextEmbeddingInput(text, task) for text in texts]
+    kwargs = dict(output_dimensionality=dimensionality) if dimensionality else {}
+    embeddings = model.get_embeddings(inputs, **kwargs)
+    return [embedding.values for embedding in embeddings]
 
-embedding = #vector
+embedding = embed_text(["text encoded"])[0]
 
 # initialize Connector object
 connector = Connector()
