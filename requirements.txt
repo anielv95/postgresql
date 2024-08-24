@@ -14,6 +14,7 @@ pandas
 pyarrow
 fastparquet
 
+cloud-sql-python-connector
 cloud-sql-python-connector[pg8000]
 SQLAlchemy==2.0.7
 pgvector
