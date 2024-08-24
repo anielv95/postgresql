@@ -87,4 +87,15 @@
     --password=PASSWORD
     ```
 
-12. 
+12. delete a user:
+    ```
+    gcloud sql users delete USER_NAME \
+    --instance=INSTANCE_NAME
+    ```
+
+13. [Aplication Deafault Credential](https://cloud.google.com/docs/authentication/provide-credentials-adc#how-to) (ADC):
+    ```
+    gcloud auth application-default login
+    ```
+
+14.
