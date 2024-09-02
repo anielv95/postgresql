@@ -12,4 +12,3 @@
     1. There's no prioritization between requests processed or models
     2. I can't say if I just want to use some percentage of my ram
     3. No option to orchestrate different machines at processing request time. There's no option to use many machines working together to serve quicker
-    4. 
