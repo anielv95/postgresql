@@ -15,8 +15,8 @@
 
 ## References:
 
-[Training Latent Dirichlet Allocation: Gibbs Sampling (Part 2 of 2)](https://www.youtube.com/watch?v=BaM1uiCpj_E)
-[Latent Dirichlet Allocation (Part 1 of 2)](https://www.youtube.com/watch?v=T05t-SqKArY)
-[LDA Topic Models](https://www.youtube.com/watch?v=3mHy4OSyRf0)
-[Latent Dirichlet Allocation](https://radimrehurek.com/gensim/models/ldamodel.html)
-[Topic Modeling in Python: Latent Dirichlet Allocation (LDA)](https://towardsdatascience.com/end-to-end-topic-modeling-in-python-latent-dirichlet-allocation-lda-35ce4ed6b3e0)
+1. [Training Latent Dirichlet Allocation: Gibbs Sampling (Part 2 of 2)](https://www.youtube.com/watch?v=BaM1uiCpj_E)
+2. [Latent Dirichlet Allocation (Part 1 of 2)](https://www.youtube.com/watch?v=T05t-SqKArY)
+3. [LDA Topic Models](https://www.youtube.com/watch?v=3mHy4OSyRf0)
+4. [Latent Dirichlet Allocation](https://radimrehurek.com/gensim/models/ldamodel.html)
+5. [Topic Modeling in Python: Latent Dirichlet Allocation (LDA)](https://towardsdatascience.com/end-to-end-topic-modeling-in-python-latent-dirichlet-allocation-lda-35ce4ed6b3e0)
