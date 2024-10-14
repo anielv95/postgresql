@@ -25,3 +25,4 @@ torch
 torchvision 
 torchaudio
 huggingface_hub
+accelerate

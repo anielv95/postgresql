@@ -1,3 +1,9 @@
+# Google Cloud Platform
+
+Personal notes in GCP
+
+## PostgreSQL in Cloud SQL
+
 1. OS details:
 
     ```cat /etc/os-release```
@@ -98,4 +104,6 @@
     gcloud auth application-default login
     ```
 
-14.
+## Vertex AI
+
+1. 
