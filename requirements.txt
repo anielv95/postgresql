@@ -20,9 +20,13 @@ pandas
 # SQLAlchemy==2.0.7
 # pgvector
 
-transformers
-torch
-torchvision 
-torchaudio
-huggingface_hub
-accelerate
+#transformers
+#torch
+#torchvision 
+#torchaudio
+#huggingface_hub
+#accelerate
+
+vertexai
+#langchain
+#langchain-openai

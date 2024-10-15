@@ -106,4 +106,10 @@ Personal notes in GCP
 
 ## Vertex AI
 
-1. 
+1.  Install Vertex AI SDK package:
+
+    ```
+    pip install --upgrade google-cloud-aiplatform
+    ```
+
+2. 
